@@ -13,6 +13,9 @@ echo_bold() {
   echo -e "\033[1m$1\033[0m"
 }
 
+echo_bold 'These are the input arguments.'
+echo "$@"
+
 if [ "$1" == "--test" ]; then
   echo_bold "\nRunning the mypy tests."
   python3 -m mypy app --ignore-missing-imports

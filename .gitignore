@@ -3,9 +3,9 @@
 #----------------------------------------------------------------------------------------------------------------------
 # Ignore the storage directory since we are storing isos and files we want to copy over there.
 app/frames/*
-app/frames/.gitkeep
+!app/frames/.gitkeep
 app/animations/*
-app/animations/.gitkeep
+!app/animations/.gitkeep
 
 #----------------------------------------------------------------------------------------------------------------------
 # Python Stuff

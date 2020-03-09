@@ -79,7 +79,7 @@ run my unit tests with pytest and the coverage plugin, pytest-cov.
 
 Example of test output.
 ```
-sudo docker run --rm -v $PWD:/work/app/animations double_pendulum --test
+$ sudo docker run --rm double_pendulum --test
 
 Running the mypy tests.
 Success: no issues found in 3 source files

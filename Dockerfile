@@ -10,7 +10,7 @@ WORKDIR work
 
 RUN pip install --user -r requirements.txt
 
-RUN export PYTHONPATH=${PYTHONPATH}:/work/app
+ENV PYTHONPATH="/work/app:${PYTHONPATH}"
 
 ENTRYPOINT ["/bin/bash", "/work/run.sh"]
 

@@ -155,7 +155,7 @@ def make_animations(time_positions, l1, l2) -> None:
     y2 = y1 - l2 * np.cos(theta2)
 
     # Plotted bob circle radius
-    circle_radius = 0.05
+    circle_radius = 0.15
     # Plot a trail of the m2 bob's position for the last trail_secs seconds.
     trail_secs = 1
     # This corresponds to max_trail time points.
@@ -208,7 +208,7 @@ def make_animations(time_positions, l1, l2) -> None:
     (
         ffmpeg
             .input(osp.join(this_dir, 'frames', 'img_*.png'), pattern_type='glob', framerate=10)
-            .output(osp.join(this_dir, 'animations', 'double_pendulum.mp4'))
+            .output(osp.join(this_dir, 'animations', 'double_pendulum_example.mp4'))
             .run(quiet=True, overwrite_output=True)
     )
 

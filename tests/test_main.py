@@ -34,7 +34,7 @@ def test_main():
     parent_dir = osp.split(this_dir)[0]
 
     gif_file = osp.join(parent_dir, 'app', 'animations', 'double_pendulum.gif')
-    mp4_file = osp.join(parent_dir, 'app', 'animations', 'double_pendulum.mp4')
+    mp4_file = osp.join(parent_dir, 'app', 'animations', 'double_pendulum_example.mp4')
 
     # Remove files if they exist from the previous run.
     if osp.isfile(gif_file):
@@ -52,4 +52,4 @@ def test_main():
     assert osp.isfile(osp.join(parent_dir, 'app', 'animations', 'double_pendulum.gif'))
 
     # Check if the mp4 has been created.
-    assert osp.isfile(osp.join(parent_dir, 'app', 'animations', 'double_pendulum.mp4'))
+    assert osp.isfile(osp.join(parent_dir, 'app', 'animations', 'double_pendulum_example.mp4'))
